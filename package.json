@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "curl -L -o 3d_models.zip https://github.com/Lakshay-Jain-1/SIH/releases/download/3d/3d_models.zip && unzip 3d_models.zip -d public/3d && rm 3d_models.zip"
   },
   "dependencies": {
     "@react-three/drei": "^9.112.0",
